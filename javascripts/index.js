@@ -19,7 +19,7 @@ $( document ).ready(function() {
     css3: true,
     scrollingSpeed: 0,
     onLeave: function(index, nextIndex, direction){
-      
+
       if(index == 2 && direction == 'up'){
         makeVisibleNav();
       }
@@ -35,5 +35,10 @@ $( document ).ready(function() {
       makeVisibleNav();
     }
   });
+
+  $window = $(window);
+  $('.section').on('click', function(e){
+
+  })
 
 });
