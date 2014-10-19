@@ -1,24 +1,21 @@
-<html ng-app="dispatch">
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title ng-bind="title">Portfolio 2</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="height=device-height" />
 
     <link rel="stylesheet" href="stylesheets/styles.css" />
-    <link rel="stylesheet" href="stylesheets/dlmenu.css" />
+    <link rel="stylesheet" href="stylesheets/jquery.fullPage.css" />
     <script src="javascripts/modernizr.custom.js"></script>
 </head>
 <body>
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
-        <div class="navbar-header">
-
-          <a class="navbar-brand" href="index.html">PORTFOLIO.</a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav center">
             <li class="active"><a href="index.html">CONTACTS</a></li>
             <li><a href="about.html">PROJECTS</a></li>
             <li><a href="contact.html">ARTWORK</a></li>
@@ -31,55 +28,38 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
-  <div class="menu-area">
-			<div id="dl-menu" class="dl-menuwrapper">
-						<button class="dl-trigger">Open Menu</button>
-						<ul class="dl-menu">
-							<li>
-								<a href="#intro">Contacts</a>
-							</li>
-							<li><a href="#about">Projects</a></li>
-							<li><a href="#services">Artwork</a></li>
-							<li><a href="#works">Portrait</a></li>
-							<li><a href="#contact">My Other Photos</a></li>
-              <li><a href="#contact">Event Photography</a></li>
-              <li><a href="#contact">Product Photography</a></li>
-							<li>
-								<a href="#">Social ></a>
-								<ul class="dl-submenu">
-									<li><a href="#">Sub menu</a></li>
-									<li><a href="#">Sub menu</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!-- /dl-menuwrapper -->
-	</div>
+  <button class="menu-triger btn hidden"><span class="glyphicon glyphicon-th"></span></button>
+    <div id="fullpage">
+      <div class="row text-center section">
+          <img src="images/1.jpg" class="img-full-width"/>
+      </div>
+      <div class="row text-center section">
+          <img src="images/2.jpg" class="img-full-width"/>
+      </div>
+      <div class="row text-center section">
+          <img src="images/3.jpg" class="img-full-width"/>
+      </div>
+      <div class="row text-center section">
+          <img src="images/4.jpg" class="img-full-width"/>
+      </div>
+      <div class="row text-center section">
+          <img src="images/5.jpg" class="img-full-width"/>
+      </div>
+      <div class="row text-center section">
+          <img src="images/6.jpg" class="img-full-width"/>
+      </div>
+      <div class="row text-center section">
+          <img src="images/7.jpg" class="img-full-width"/>
+      </div>
+    </div>
 
-    <div class="row text-center">
-      <img src="images/1.jpg" class="img-full-width"/>
-    </div>
-    <div class="row text-center">
-      <img src="images/2.jpg" class="img-full-width"/>
-    </div>
-    <div class="row text-center">
-      <img src="images/3.jpg" class="img-full-width"/>
-    </div>
-    <div class="row text-center">
-      <img src="images/4.jpg" class="img-full-width"/>
-    </div>
-    <div class="row text-center">
-      <img src="images/5.jpg" class="img-full-width"/>
-    </div>
-    <div class="row text-center">
-      <img src="images/6.jpg" class="img-full-width"/>
-    </div>
-    <div class="row text-center">
-      <img src="images/7.jpg" class="img-full-width"/>
-    </div>
 
   <script src="javascripts/jquery.js"></script>
   <script src="javascripts/jquery.dlmenu.js"></script>
   <script src="javascripts/bootstrap.js"></script>
   <script src="javascripts/jquery.bootstrap-autohidingnavbar.js"></script>
+  <script src="javascripts/jquery.easings.min.js"></script>
+  <script src="javascripts/jquery.slimscroll.min.js"></script>
+  <script src="javascripts/jquery.fullPage.js"></script>
   <script src="javascripts/index.js"></script>
 </body>
