@@ -2,3 +2,44 @@ img.img-full-width {
   width: auto;
   height: 100%;
 }
+
+.navbar-fixed-top {
+  &.hidden-nav {
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  }
+  &.visible-nav {
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+  }
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+
+.nav {
+  &.center {
+    float: none !important;
+    padding-left: auto !important;
+  }
+}
+
+.menu-triger {
+    span {
+      font-size: 30px;
+    }
+  background-color: #222222;
+  color: #ffffff;
+  position: fixed;
+  z-index: 9999;
+  &.hidden {
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  }
+  &.visible {
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+  }
+}
