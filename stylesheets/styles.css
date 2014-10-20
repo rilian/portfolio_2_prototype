@@ -8029,6 +8029,11 @@ body {
   background-color: #181D1F;
 }
 
+/* line 5, ../sass/_bootstrap-extended.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #bebebe;
+}
+
 /* line 1, ../sass/_index.scss */
 img.img-full-width {
   width: auto;
@@ -8080,4 +8085,13 @@ img.img-full-width {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
+}
+
+/* line 47, ../sass/_index.scss */
+.photo-title {
+  bottom: 0px;
+  font-size: 15px;
+  color: #bebebe;
+  position: absolute;
+  right: 10px;
 }
