@@ -15,11 +15,16 @@ $( document ).ready(function() {
   }
 
   $('#fullpage').fullpage({
-    resize: false,
+    resize: true,
     css3: true,
     scrollingSpeed: 1,
     onLeave: function(index, nextIndex, direction){
-
+      if(index < 10) {
+        $(".next-photo-button").addClass('visible');
+        setTimeout(function(){
+          $(".next-photo-button").removeClass('visible');
+        }, 1000)
+      }
       if(index == 2 && direction == 'up'){
         makeVisibleNav();
       }
@@ -28,6 +33,9 @@ $( document ).ready(function() {
       }
     }
   });
+  $(".next-photo-button").on('click', function(){
+    $.fn.fullpage.moveSectionDown();
+  });
   $(".menu-triger").on('click', function () {
     if ($('.navbar-fixed-top').hasClass('visible-nav')) {
       makeHiddenNav();
@@ -35,7 +43,9 @@ $( document ).ready(function() {
       makeVisibleNav();
     }
   });
-
+  setTimeout(function(){
+    $(".next-photo-button").removeClass('visible');
+  }, 2000)
   $window = $(window);
   $('.section').on('click', function(e){
 
