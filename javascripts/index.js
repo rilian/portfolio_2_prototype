@@ -17,7 +17,7 @@ $( document ).ready(function() {
   $('#fullpage').fullpage({
     resize: false,
     css3: true,
-    scrollingSpeed: 0,
+    scrollingSpeed: 1,
     onLeave: function(index, nextIndex, direction){
 
       if(index == 2 && direction == 'up'){
