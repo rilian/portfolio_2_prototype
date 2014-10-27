@@ -1,6 +1,46 @@
-img.img-full-width {
+body {
+  font-family: 'Open Sans',sans-serif;
+}
+
+p {
+  line-height: 25px;
+  font-weight: 300;
+}
+
+img.img-full-height {
   width: auto;
   height: 100%;
+}
+
+img.img-full-width {
+  width: 100%;
+  height: auto;
+}
+
+.panel {
+  margin-bottom: 0;
+}
+
+.portfolio, .calc {
+  position: fixed;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  padding: 0;
+  z-index: 99990;
+  transition: background-color 200ms linear;
+  &:hover {
+      background-color: rgba(255,255,255,0.2);
+      opacity: 1;
+    }
+}
+
+.portfolio {
+  top: 60px;
+}
+
+.calc {
+  top: 120px;
 }
 
 .navbar-fixed-top {
@@ -44,10 +84,49 @@ img.img-full-width {
   }
 }
 
-.photo-title {
-  bottom: 0px;
+.photo-title, .photo-page {
   font-size: 15px;
   color: #bebebe;
   position: absolute;
   right:10px;
+}
+.photo-title {
+  bottom: 0;
+}
+.photo-page {
+  top:60px;
+  font-size: 30px;
+  width:30px;
+  height: 30px;
+  background-color: #222222;
+  opacity: 0.7;
+  padding-top: 3px;
+  border-radius: 100%;
+}
+
+.next-photo-button, .previous-photo-button {
+  position: fixed;
+
+  height: 30%;
+  width: 80%;
+  left: 10%;
+  z-index: 100;
+  cursor: pointer;
+  background-image: url(/images/arrow-down.png);
+  background-size: 200px 45px;
+  background-position: 50% 95%;
+  background-repeat: no-repeat;
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  opacity: 0;
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.next-photo-button{
+  bottom: 0;
+}
+.previous-photo-button {
+  transform: rotateZ(180deg);
+  top: 0;
 }

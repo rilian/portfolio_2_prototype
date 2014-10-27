@@ -8035,63 +8035,158 @@ body {
 }
 
 /* line 1, ../sass/_index.scss */
-img.img-full-width {
+body {
+  font-family: 'Open Sans',sans-serif;
+}
+
+/* line 5, ../sass/_index.scss */
+p {
+  line-height: 25px;
+  font-weight: 300;
+}
+
+/* line 10, ../sass/_index.scss */
+img.img-full-height {
   width: auto;
   height: 100%;
 }
 
-/* line 6, ../sass/_index.scss */
+/* line 15, ../sass/_index.scss */
+img.img-full-width {
+  width: 100%;
+  height: auto;
+}
+
+/* line 20, ../sass/_index.scss */
+.panel {
+  margin-bottom: 0;
+}
+
+/* line 24, ../sass/_index.scss */
+.portfolio, .calc {
+  position: fixed;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  padding: 0;
+  z-index: 99990;
+  transition: background-color 200ms linear;
+}
+/* line 32, ../sass/_index.scss */
+.portfolio:hover, .calc:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+
+/* line 38, ../sass/_index.scss */
+.portfolio {
+  top: 60px;
+}
+
+/* line 42, ../sass/_index.scss */
+.calc {
+  top: 120px;
+}
+
+/* line 46, ../sass/_index.scss */
 .navbar-fixed-top {
   transition: visibility 0s linear 0.5s,opacity 0.5s linear;
 }
-/* line 7, ../sass/_index.scss */
+/* line 47, ../sass/_index.scss */
 .navbar-fixed-top.hidden-nav {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.5s,opacity 0.5s linear;
 }
-/* line 12, ../sass/_index.scss */
+/* line 52, ../sass/_index.scss */
 .navbar-fixed-top.visible-nav {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
 }
 
-/* line 21, ../sass/_index.scss */
+/* line 61, ../sass/_index.scss */
 .nav.center {
   float: none !important;
   padding-left: auto !important;
 }
 
-/* line 27, ../sass/_index.scss */
+/* line 67, ../sass/_index.scss */
 .menu-triger {
   background-color: #222222;
   color: #ffffff;
   position: fixed;
   z-index: 9999;
 }
-/* line 28, ../sass/_index.scss */
+/* line 68, ../sass/_index.scss */
 .menu-triger span {
   font-size: 30px;
 }
-/* line 35, ../sass/_index.scss */
+/* line 75, ../sass/_index.scss */
 .menu-triger.hidden {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.5s,opacity 0.5s linear;
 }
-/* line 40, ../sass/_index.scss */
+/* line 80, ../sass/_index.scss */
 .menu-triger.visible {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
 }
 
-/* line 47, ../sass/_index.scss */
-.photo-title {
-  bottom: 0px;
+/* line 87, ../sass/_index.scss */
+.photo-title, .photo-page {
   font-size: 15px;
   color: #bebebe;
   position: absolute;
   right: 10px;
+}
+
+/* line 93, ../sass/_index.scss */
+.photo-title {
+  bottom: 0;
+}
+
+/* line 96, ../sass/_index.scss */
+.photo-page {
+  top: 60px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #222222;
+  opacity: 0.7;
+  padding-top: 3px;
+  border-radius: 100%;
+}
+
+/* line 107, ../sass/_index.scss */
+.next-photo-button, .previous-photo-button {
+  position: fixed;
+  height: 30%;
+  width: 80%;
+  left: 10%;
+  z-index: 100;
+  cursor: pointer;
+  background-image: url(/images/arrow-down.png);
+  background-size: 200px 45px;
+  background-position: 50% 95%;
+  background-repeat: no-repeat;
+  transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+  opacity: 0;
+}
+/* line 121, ../sass/_index.scss */
+.next-photo-button.visible, .previous-photo-button.visible {
+  opacity: 1;
+}
+
+/* line 126, ../sass/_index.scss */
+.next-photo-button {
+  bottom: 0;
+}
+
+/* line 129, ../sass/_index.scss */
+.previous-photo-button {
+  transform: rotateZ(180deg);
+  top: 0;
 }
