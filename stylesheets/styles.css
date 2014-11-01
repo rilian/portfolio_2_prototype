@@ -8151,16 +8151,9 @@ img.img-full-width {
 /* line 96, ../sass/_index.scss */
 .photo-page {
   top: 60px;
-  font-size: 30px;
-  width: 30px;
-  height: 30px;
-  background-color: #222222;
-  opacity: 0.7;
-  padding-top: 3px;
-  border-radius: 100%;
 }
 
-/* line 107, ../sass/_index.scss */
+/* line 100, ../sass/_index.scss */
 .next-photo-button, .previous-photo-button {
   position: fixed;
   height: 30%;
@@ -8175,17 +8168,17 @@ img.img-full-width {
   transition: visibility 0s linear 0.5s,opacity 0.5s linear;
   opacity: 0;
 }
-/* line 121, ../sass/_index.scss */
+/* line 114, ../sass/_index.scss */
 .next-photo-button.visible, .previous-photo-button.visible {
   opacity: 1;
 }
 
-/* line 126, ../sass/_index.scss */
+/* line 119, ../sass/_index.scss */
 .next-photo-button {
   bottom: 0;
 }
 
-/* line 129, ../sass/_index.scss */
+/* line 122, ../sass/_index.scss */
 .previous-photo-button {
   transform: rotateZ(180deg);
   top: 0;
