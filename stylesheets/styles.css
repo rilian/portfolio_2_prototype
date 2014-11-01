@@ -8169,7 +8169,7 @@ img.img-full-width {
   z-index: 100;
   cursor: pointer;
   background-image: url(/images/arrow-down.png);
-  background-size: 200px 45px;
+  background-size: 45px 25px;
   background-position: 50% 95%;
   background-repeat: no-repeat;
   transition: visibility 0s linear 0.5s,opacity 0.5s linear;
