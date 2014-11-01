@@ -75,14 +75,14 @@ html, body {
 .fp-controlArrow.fp-prev {
     background-image: url(/images/arrow.png);
     transform: rotateY(180deg);
-    background-size: 60px 100px;
+    background-size: 25px 40px;
     background-repeat: no-repeat;
-    background-position: 47% 45%;
+    background-position: 47% 50%;
     left: -50%;
 }
 .fp-controlArrow.fp-next {
     background-image: url(/images/arrow.png);
-    background-size: 60px 100px;
+    background-size: 25px 40px;
     background-repeat: no-repeat;
     background-position: 47% 50%;
     background-repeat: no-repeat;
