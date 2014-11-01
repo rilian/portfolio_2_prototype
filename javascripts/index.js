@@ -38,6 +38,11 @@ $( document ).ready(function() {
       else  {
         makeHiddenNav();
       }
+      var current_section = $('.section').eq((index - 1));
+      if (current_section.find('.fp-slides').length) {
+        $.fn.fullpage.scrollSlider(current_section, 0);
+      }
+
     },
     onSlideLeave: function( anchorLink, index, slideIndex, direction){
       $('.section.fp-section.active').children('.fp-controlArrow.fp-prev').show();

@@ -67,6 +67,18 @@
 		//Apple devices (laptops, mouses...)
 		var scrollDelay = 600;
 
+    $.fn.fullpage.scrollSlider= function(section, slide){
+      if (typeof slide != 'undefined') {
+        var slides = section.find('.fp-slides');
+        var destiny = slides.find('[data-anchor="' + slide + '"]');
+        if (!destiny.length) {
+          destiny = slides.find('.fp-slide').eq(slide);
+        }
+
+        landscapeScroll(slides, destiny);
+      }
+    }
+
 		$.fn.fullpage.setAutoScrolling = function(value){
 			options.autoScrolling = value;
 
