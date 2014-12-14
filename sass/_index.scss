@@ -142,3 +142,12 @@ img.img-full-width {
   top: 0;
 }
 
+#control-buttons {
+  -webkit-transition: -webkit-transform 0.1s ease-in;
+  -moz-transition: -moz-transform 0.1s ease-in;
+  -o-transition: -o-transform 0.1s ease-in;
+  transition: transform 0.1s ease-in;
+  position: fixed;
+  z-index: 5;
+}
+
