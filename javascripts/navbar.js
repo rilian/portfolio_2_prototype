@@ -20,15 +20,20 @@ $( document ).ready(function() {
     } else {
       window.makeVisibleNav();
     }
+    if ($(window).width() < 995){
+      $('#navbar-menu').collapse('toggle');
+    }
   });
 
-  $('#navbar-menu').on('shown.bs.collapse', function () {
-    var collapseHeight = $('.collapse.in').height();
-    $('#control-buttons').css('transform', 'translateY(' + collapseHeight + 'px)');
+  $('#navbar-menu').on('show.bs.collapse', function () {
+    $('.portfolio').addClass('collapsed');
+    $('.calc').addClass('collapsed');
   })
 
-  $('#navbar-menu').on('hidden.bs.collapse', function () {
-    $('#control-buttons').css('transform', 'translateY(0)');
+  $('#navbar-menu').on('hide.bs.collapse', function () {
+    $('.portfolio').removeClass('collapsed');
+    $('.calc').removeClass('collapsed');
+    window.makeHiddenNav();
   })
 
 });

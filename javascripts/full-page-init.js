@@ -26,7 +26,7 @@ $( document ).ready(function() {
         }, 1000)
       }
 
-      if (index == 2 && direction == 'up') {
+      if (index == 2 && direction == 'up' && $(window).width() > 995) {
         window.makeVisibleNav();
       }
       else {

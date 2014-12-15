@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
           <span class="sr-only">Toggle navigation</span>
@@ -34,11 +34,13 @@
       </div><!--/.nav-collapse -->
     </div>
     </div>
-  <button class="menu-triger btn hidden"><span class="glyphicon glyphicon-th"></span></button>
-  <div id="control-buttons">
-    <button class="portfolio btn" data-toggle="modal" data-target=".portfolio-modal"><img src="images/face.png" class="img-full-width"/></button>
-    <button class="calc btn" data-toggle="modal" data-target=".calc-modal"><img src="images/camera.svg" class="img-full-width"/></button>
-  </div>
+  <button class="menu-triger btn hidden button">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <button class="portfolio btn" data-toggle="modal" data-target=".portfolio-modal"><img src="images/face.png" class="img-full-width"/></button>
+  <button class="calc btn" data-toggle="modal" data-target=".calc-modal"><img src="images/camera.svg" class="img-full-width"/></button>
   <div class="modal fade portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -199,7 +201,7 @@
       </div>
     </div>
   <script src="javascripts/bootstrap.js"></script>
-  <script src="javascripts/index.js"></script>
   <script src="javascripts/navbar.js"></script>
+  <script src="javascripts/index.js"></script>
   <script src="javascripts/modals.js"></script>
 </body>
