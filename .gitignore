@@ -4,3 +4,7 @@
 .swp
 .sass-cache
 
+bower_components
+dist
+www
+node_modules

@@ -46,7 +46,7 @@ img.img-full-width {
   width: 55px;
   border-radius: 100%;
   padding: 0;
-  z-index: 1040;
+  z-index: 1009;
   transition: background-color 200ms linear;
   &:hover {
       background-color: rgba(255,255,255,0.2);
@@ -118,7 +118,7 @@ img.img-full-width {
   background-color: #222222;
   color: #ffffff;
   position: fixed;
-  z-index: 1000;
+  z-index: 1001;
   &.hidden {
     visibility:hidden;
     opacity:0;
@@ -151,7 +151,7 @@ img.img-full-width {
   left: 10%;
   z-index: 100;
   cursor: pointer;
-  background-image: url(/images/arrow-down.png);
+  background-image: image-url('arrow-down.png');
   background-size: 45px 25px;
   background-position: 50% 95%;
   background-repeat: no-repeat;
