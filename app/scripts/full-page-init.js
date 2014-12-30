@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   $('#fullpage').fullpage({
     css3: true,
-    scrollingSpeed: 1,
+    scrollingSpeed: 500,
     autoScrolling: true,
     scrollBar: false,
     easing: 'easeInQuart',
