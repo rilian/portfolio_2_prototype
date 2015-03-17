@@ -1104,12 +1104,21 @@
     /**
      * Scrolling horizontally when clicking on the slider controls.
      */
-    $('.fp-section').on('click touchstart', '.fp-controlArrow', function() {
-      if ($(this).hasClass('fp-prev')) {
-        $.fn.fullpage.moveSlideLeft();
-      } else {
-        $.fn.fullpage.moveSlideRight();
+    var dragging = false
+    $(window).on('touchmove', '.fp-controlArrow', function() {
+      dragging = true;
+    });
+    $('.fp-section').on('click touchend', '.fp-controlArrow', function() {
+      if (!dragging){
+        if ($(this).hasClass('fp-prev')) {
+          $.fn.fullpage.moveSlideLeft();
+        } else {
+          $.fn.fullpage.moveSlideRight();
+        }
       }
+    });
+    $('.fp-section').on('touchstart', '.fp-controlArrow', function() {
+      dragging = false;
     });
 
     /**

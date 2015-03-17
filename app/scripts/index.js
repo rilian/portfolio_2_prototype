@@ -11,16 +11,15 @@ $( document ).ready(function() {
       img.removeClass('img-full-height');
     }
   }
-  $("img#gallery-photo").load(function() {
-    $.each($(this), function(i,val){
-      if ($(window).width()/$(window).height() < $(this).width()/$(this).height()) {
-        makeFullWidth($(this));
-      }
-      else {
-        makeFullHeidht($(this));
-      }
-    });
-  });
+  $.each($("img#gallery-photo"), function(){
+    console.log($(this));
+    if ($(window).width()/$(window).height() < $(this).width()/$(this).height()) {
+      makeFullWidth($(this));
+    }
+    else {
+      makeFullHeidht($(this));
+    }
+  })
   $( window ).resize(function() {
     $("img#gallery-photo").each(function(i){
       if ($(window).width()/$(window).height() < $(this).width()/$(this).height()) {

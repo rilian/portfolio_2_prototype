@@ -73,6 +73,9 @@ html, body {
 }
 .fp-controlArrow.fp-prev {
   background-image: image-url('arrow.png');
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   background-size: 25px 40px;
   background-repeat: no-repeat;

@@ -50,10 +50,10 @@ $( document ).ready(function() {
       }
     }
   });
-  $(".next-photo-button").on('click', function(){
+  $(".next-photo-button").on('mouseup', function(){
     $.fn.fullpage.moveSectionDown();
   });
-  $(".previous-photo-button").on('click', function(){
+  $(".previous-photo-button").on('mouseup', function(){
     $.fn.fullpage.moveSectionUp();
   });
   setTimeout(function(){
