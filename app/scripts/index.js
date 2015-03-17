@@ -12,7 +12,6 @@ $( document ).ready(function() {
     }
   }
   $.each($("img#gallery-photo"), function(){
-    console.log($(this));
     if ($(window).width()/$(window).height() < $(this).width()/$(this).height()) {
       makeFullWidth($(this));
     }
