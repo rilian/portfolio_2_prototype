@@ -47,6 +47,7 @@ img.img-full-width {
   border-radius: 100%;
   padding: 0;
   z-index: 1009;
+  background-color: silver;
   transition: background-color 200ms linear;
   &:hover {
       background-color: rgba(255,255,255,0.2);
@@ -139,9 +140,16 @@ img.img-full-width {
 }
 .photo-title {
   bottom: 0;
+  background: rgba(0,0,0,0.4);
 }
 .photo-page {
   top:60px;
+}
+
+@media(max-width: 700px) {
+  .photo-title {
+    right: 0;
+  }
 }
 
 .next-photo-button, .previous-photo-button {
@@ -166,6 +174,9 @@ img.img-full-width {
   bottom: 0;
 }
 .previous-photo-button {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
   top: 0;
 }
