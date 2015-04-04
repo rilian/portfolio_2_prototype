@@ -5,6 +5,10 @@ $( document ).ready(function() {
     $(".navbar-fixed-top").removeClass('hidden-nav');
     $(".menu-triger").addClass('hidden');
     $(".menu-triger").removeClass('visible');
+    $("button.portfolio").addClass('visible');
+    $("button.portfolio").removeClass('hidden');
+    $("button.calc").addClass('visible');
+    $("button.calc").removeClass('hidden');
   }
 
   window.makeHiddenNav = function () {
@@ -12,6 +16,10 @@ $( document ).ready(function() {
     $(".navbar-fixed-top").removeClass('visible-nav');
     $(".menu-triger").addClass('visible');
     $(".menu-triger").removeClass('hidden');
+    $("button.portfolio").addClass('hidden');
+    $("button.portfolio").removeClass('visible');
+    $("button.calc").addClass('hidden');
+    $("button.calc").removeClass('visible');
   }
 
   $(".menu-triger").on('click', function () {

@@ -49,10 +49,19 @@ img.img-full-width {
   z-index: 1009;
   background-color: silver;
   transition: background-color 200ms linear;
+  transition: visibility 0s linear 0.5s,opacity 0.5s linear;
   &:hover {
-      background-color: rgba(255,255,255,0.2);
-      opacity: 1;
-    }
+    background-color: rgba(255,255,255,0.2);
+    opacity: 1;
+  }
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+  }
   transition-property: top, left, height, width;
   transition-duration: 0.3s, 0.3s, 0.3s, 0.3s;
 //  transition-delay: 0s, 0.2s, 0.3s, 0.3s;
@@ -141,6 +150,8 @@ img.img-full-width {
 .photo-title {
   bottom: 0;
   background: rgba(0,0,0,0.4);
+  padding: 5px;
+  border-radius: 5px;
 }
 .photo-page {
   top:60px;
