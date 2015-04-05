@@ -3,8 +3,6 @@ $( document ).ready(function() {
   window.makeVisibleNav = function () {
     $(".navbar-fixed-top").addClass('visible-nav');
     $(".navbar-fixed-top").removeClass('hidden-nav');
-    $(".menu-triger").addClass('hidden');
-    $(".menu-triger").removeClass('visible');
     $("button.portfolio").addClass('visible');
     $("button.portfolio").removeClass('hidden');
     $("button.calc").addClass('visible');
@@ -14,8 +12,6 @@ $( document ).ready(function() {
   window.makeHiddenNav = function () {
     $(".navbar-fixed-top").addClass('hidden-nav');
     $(".navbar-fixed-top").removeClass('visible-nav');
-    $(".menu-triger").addClass('visible');
-    $(".menu-triger").removeClass('hidden');
     $("button.portfolio").addClass('hidden');
     $("button.portfolio").removeClass('visible');
     $("button.calc").addClass('hidden');
