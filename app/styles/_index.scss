@@ -49,7 +49,6 @@ img.img-full-width {
   z-index: 1009;
   background-color: silver;
   transition: background-color 200ms linear;
-  transition: visibility 0s linear 0.5s,opacity 0.5s linear;
   &:hover {
     background-color: rgba(255,255,255,0.2);
     opacity: 1;
@@ -62,13 +61,13 @@ img.img-full-width {
     visibility: visible;
     opacity: 1;
   }
-  transition-property: top, left, height, width;
-  transition-duration: 0.3s, 0.3s, 0.3s, 0.3s;
-//  transition-delay: 0s, 0.2s, 0.3s, 0.3s;
+  @media(max-width: 700px) {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .portfolio {
-  left: 10px;
   top: 60px;
   &.collapsed {
     top: 5px;
@@ -79,7 +78,6 @@ img.img-full-width {
 }
 
 .calc {
-  left: 10px;
   top: 120px;
   &.collapsed {
     top: 5px;
@@ -105,14 +103,11 @@ img.img-full-width {
     float: none;
     left: 15px;
   }
-}
-
-.nav {
-  &.center {
-    float: none !important;
-    padding-left: auto !important;
+  .navbar-collapse.in, .navbar-collapse.collapsing {
+    margin-top: 50px;
   }
 }
+
 
 .menu-trigger {
     span {
@@ -123,7 +118,6 @@ img.img-full-width {
       background-color: #fff;
       margin: 4px;
     }
-  margin-left: 10px;
   padding: 12px 12px;
   background-color: #222222;
   color: #ffffff;
