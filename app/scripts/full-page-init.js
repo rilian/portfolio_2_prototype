@@ -10,7 +10,7 @@ $( document ).ready(function() {
     loopTop: false,
     loopHorizontal: false,
     touchSensitivity: 15,
-    resize: false,
+    resize: true,
 
     onLeave: function (index, nextIndex, direction) {
       if (index > 2 && direction == 'up') {

@@ -263,26 +263,26 @@ img.img-full-width {
   float: none !important;
   padding-left: auto !important; }
 
-.menu-triger {
+.menu-trigger {
   margin-left: 10px;
   padding: 12px 12px;
   background-color: #222222;
   color: #ffffff;
   position: fixed;
   z-index: 1000; }
-  .menu-triger span {
+  .menu-trigger span {
     display: block;
     width: 22px;
     height: 2px;
     border-radius: 1px;
     background-color: #fff;
     margin: 4px; }
-  .menu-triger.hidden {
+  .menu-trigger.hidden {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
             transition: visibility 0s linear 0.5s, opacity 0.5s linear; }
-  .menu-triger.visible {
+  .menu-trigger.visible {
     visibility: visible;
     opacity: 1;
     -webkit-transition-delay: 0s;

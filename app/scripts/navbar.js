@@ -9,7 +9,7 @@ $( document ).ready(function() {
     $("button.portfolio").removeClass('hidden');
     $("button.calc").addClass('visible');
     $("button.calc").removeClass('hidden');
-  }
+  };
 
   window.makeHiddenNav = function () {
     $(".navbar-fixed-top").addClass('hidden-nav');
@@ -20,9 +20,9 @@ $( document ).ready(function() {
     $("button.portfolio").removeClass('visible');
     $("button.calc").addClass('hidden');
     $("button.calc").removeClass('visible');
-  }
+  };
 
-  $(".menu-triger").on('click', function () {
+  $(".menu-trigger").on('click', function () {
     if ($('.navbar-fixed-top').hasClass('visible-nav')) {
       window.makeHiddenNav();
     } else {
@@ -36,12 +36,11 @@ $( document ).ready(function() {
   $('#navbar-menu').on('show.bs.collapse', function () {
     $('.portfolio').addClass('collapsed');
     $('.calc').addClass('collapsed');
-  })
+  });
 
   $('#navbar-menu').on('hide.bs.collapse', function () {
     $('.portfolio').removeClass('collapsed');
     $('.calc').removeClass('collapsed');
     window.makeHiddenNav();
   })
-
 });
